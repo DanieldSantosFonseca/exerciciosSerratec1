@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas lista de exercicios 2</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body id="inicio">
+
+    <header>
+        <nav>
+            <a href="#inicio">
+                <p id="link-menu">Inicio</p>
+            </a>
+
+            <div class="dropdown">
+
+                <p class="dropbtn">atividades</p>
+
+
+                <div class="dropdown-content">
+
+                    <a href="#atividade1">atividade 1</a>
+
+                    <a href="#atividade2">atividade 2</a>
+
+                    <a href="#atividade3">atividade 3</a>
+
+                    <a href="#atividade4">atividade 4</a>
+
+                    <a href="#atividade5">atividade 5</a>
+
+                    <a class="ultimo" href="#atividade6">atividade 6</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+
+                <p class="dropbtn">lista de exercícios</p>
+
+
+                <div class="dropdown-content">
+
+                    <a href="../lista1/respostasLista1.html">Lista 1</a>
+                    <a href="../lista2/respostasLista2.html">Lista 2</a>
+                    <a href="../lista3/respostasLista3.html">Lista 3</a>
+                    <a href="../lista4/respostasLista4.html">Lista 4</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- TODAS AS ATIVIDADE -->
+    <div id="atividades">
+        <h1>Lista de exercícios de Lógica 2</h1>
+
+        <!-- ATIVIDADE 1 -->
+
+        <div class="atividade" id="atividade1">
+            <p class="enunciado">
+                1-) Leve em conta as seguintes ações a serem consideradas no desenvolvimento de um algoritimo.
+                Assinale a alternativa que indica a ordem correta em que essas ações devem ser executadas
+            </p>
+
+            <ol style="margin-left: 30px;">
+                <li>Executar o algoritimo.</li>
+
+                <li>Identificar os dados de entrada</li>
+                <li>Determinar o que é preciso para transformar dados de entrada em dados de saída</li>
+                <li>Compreender o problema</li>
+                <li>Construir o algoritimo</li>
+                <li>Identificar os dados de saída</li>
+                <li>Testar o algoritimo</li>
+            </ol>
+
+            <div class="respostas">
+
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta1">
+                    <label for="resposta1"></label>
+                    <p>2, 6, 4, 5, 3, 1, 7.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta2">
+                    <label for="resposta2"></label>
+                    <p>4, 2, 6, 3, 5, 1, 7.</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta3">
+                    <label for="resposta3"></label>
+                    <p>4, 2, 6, 3, 5, 7, 1.</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta4">
+                    <label for="resposta4"></label>
+                    <p>2, 6, 5, 4, 3, 1, 7.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta5">
+                    <label for="resposta5"></label>
+                    <p>4, 2, 6, 5, 3, 7, 1.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- ATIVIDADE 2 -->
+
+
+        <div class="atividade" id="atividade2">
+            <p class="enunciado">
+                2-) Elaborar um algoritmo que lê 2 valores a e b, some os dois e escreva o resultado
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite o primeiro número: </p>
+                    <input type="number" id="e2-1numero" placeholder="Primeiro número" onkeyup="calcularE2()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite o primeiro número: </p>
+                    <input type="number" id="e2-2numero"placeholder="Segundo número" onkeyup="calcularE2()">
+
+                </div>
+                <div class="resposta">
+                    <p>A soma entre o primeiro e o segundo número é igual a: <span id="e2-resposta"></span> </p>
+
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <!-- ATIVIDADE 3 -->
+        <div class="atividade" id="atividade3">
+            <p class="enunciado">
+                3-) Faça um algoritmo para ler a base e a altura de um triângulo e em seguida, escreva a sua área. <br>
+                Área = ( Base * Altura ) / 2
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite o valor da base do triângulo</p>
+                    <input type="number" id="e3-1numero" placeholder="Base do triângulo" onkeyup="calcularE3()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite o valor da altura do triângulo</p>
+                    <input type="number" id="e3-2numero"placeholder="Altura do triângulo" onkeyup="calcularE3()">
+
+                </div>
+                <div class="resposta">
+                    <p>A área do triângulo é igual a: <span id="e3-resposta"></span> </p>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ATIVIDADE 4 -->
+        <div class="atividade" id="atividade4">
+            <p class="enunciado">
+                4-) Faça um algoritmo que leia 3 números inteiros e mostre o menor deles.
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite o primeiro número: </p>
+                    <input type="number" id="e4-1numero" placeholder="Primeiro número" onkeyup="calcularE4()" value="0">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite o segundo número: </p>
+                    <input type="number" id="e4-2numero"placeholder="Segundo número" onkeyup="calcularE4()" value="0">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite o terceiro número: </p>
+                    <input type="number" id="e4-3numero"placeholder="Terceiro número" onkeyup="calcularE4()" value="0">
+
+                </div>
+                <div class="resposta">
+                    <p><span id="e4-resposta">Campo de respostas</span> </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="atividade" id="atividade5">
+            <p class="enunciado">
+                5-) Faça um algoritmo que leia 3 notas de um aluno e escreva a média.
+
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite a primeira nota</p>
+                    <input type="number" id="e5-1numero" placeholder="Primeira nota" onkeyup="calcularE5()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite segunda nota</p>
+                    <input type="number" id="e5-2numero"placeholder="Segunda nota" onkeyup="calcularE5()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite segunda nota</p>
+                    <input type="number" id="e5-3numero"placeholder="Segunda nota" onkeyup="calcularE5()">
+
+                </div>
+                <div class="resposta">
+                    <p>A soma das notas é igual a: <span id="e5-resposta"></span> </p>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="atividade" id="atividade6">
+            <p class="enunciado"> 6-) Elabore um algoritmo que mova três discos de uma Torre de Hanói, que consiste em três hastes (a-b-c), uma das quais serve de suporte para três discos de tamanhos diferentes (1-2-3), os menores sobre os maiores. Pode-se mover um disco de cada vez para qualquer haste, contanto que nunca sejacolocado um disco maior sobre um menor. O objetivo é transferir os três discos para outra haste
+
+            </p>
+
+            <div class="respostas">
+
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta1">
+                    <label for="resposta1"></label>
+                    <p>não fez frio, Paulo não foi ao cinema e choveu.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta2">
+                    <label for="resposta2"></label>
+                    <p>fez frio, Paulo foi ao cinema e choveu.</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta3">
+                    <label for="resposta3"></label>
+                    <p>fez frio, Paulo não foi ao cinema e choveu.</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta4">
+                    <label for="resposta4"></label>
+                    <p>fez frio, Paulo não foi ao cinema e não choveu.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta5">
+                    <label for="resposta5"></label>
+                    <p>não fez frio, Paulo foi ao cinema e não choveu.</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <div id="rodape"><a href="https://www.linkedin.com/in/daniel-dos-santos-2049ab202/" target="_blank">Desenvolvido por Daniel dos Santos</a></div>
+    </footer>
+    
+
+    <script src="js/enunciado2.js"></script>
+    <script src="js/enunciado3.js"></script>
+    <script src="js/enunciado4.js"></script>
+    <script src="js/enunciado5.js"></script>
+</body>
+
+</html>

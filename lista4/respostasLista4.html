@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas lista de exercicios 4</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body id="inicio">
+
+    <header>
+        <nav>
+            <a href="#inicio">
+                <p id="link-menu">Inicio</p>
+            </a>
+
+            <div class="dropdown">
+
+                <p class="dropbtn">atividades</p>
+
+
+                <div class="dropdown-content">
+
+                    <a href="#atividade1">atividade 1</a>
+
+                    <a href="#atividade2">atividade 2</a>
+
+                    <a href="#atividade3">atividade 3</a>
+
+                    <a href="#atividade4">atividade 4</a>
+
+                    <a href="#atividade5">atividade 5</a>
+
+                    <a class="ultimo" href="#atividade6">atividade 6</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+
+                <p class="dropbtn">lista de exercícios</p>
+
+
+                <div class="dropdown-content">
+
+                    <a href="../lista1/respostasLista1.html">Lista 1</a>
+                    <a href="../lista2/respostasLista2.html">Lista 2</a>
+                    <a href="../lista3/respostasLista3.html">Lista 3</a>
+                    <a href="../lista4/respostasLista4.html">Lista 4</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- TODAS AS ATIVIDADE -->
+    <div id="atividades">
+        <h1>Lista de exercícios de Lógica 4</h1>
+
+        <!-- ATIVIDADE 1 -->
+
+        <div class="atividade" id="atividade1">
+            <p class="enunciado"> 1-) Faça um algoritmo que leia vários números e informe quantos desses números entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido o algoritmo deverá encerrar sua execução. 
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Informe a quantidade de números que deseja escrever</p>
+                    <input type="number" id="e1-1numero" placeholder="Quantidade" onkeyup="calculaE1()">
+
+                </div>
+ 
+                <div class="resposta">
+                    <p><span id="e1-resposta"></span></p>
+                </div>
+                <div class="resposta">
+                    <p><span id="e1-2resposta"></span></p>
+                </div>
+            </div>
+
+
+        </div>
+        <hr>
+
+        <!-- ATIVIDADE 2 -->
+
+
+        <div class="atividade" id="atividade2">
+            <p class="enunciado"> 2-) Construa um algoritmo que leia uma quantidade indeterminada de números inteiros positivos e identifique qual foi o maior número digitado. O final da série de números digitada deve ser indicado pela entrada de -1.
+            </p>
+
+            <table id="tabela">
+                <tr>
+                    <th>Possui convite</th>
+                    <th>Tem mais de 18 anos</th>
+                    <th>Pode consumir?</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <!-- ATIVIDADE 3 -->
+        <div class="atividade" id="atividade3">
+            <p class="enunciado">
+                3-) Existem dois detectores de incêndio. Se qualquer um for acionado, a campainha irá disparar. Valores:
+                Sim (1) Não (0). Como fica a tabela verdade?
+            </p>
+
+            <table id="tabela">
+                <tr>
+                    <th>Sensor 1</th>
+                    <th>Sensor 2</th>
+                    <th>campainha</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+        <div class="atividade" id="atividade4">
+            <p class="enunciado">
+                4-) Leia a seguinte proposição: “Se ocorrer de Maria ser sensata ou de João ser amoroso, então ocorre
+                harmonia no lar.” Uma proposição logicamente equivalente à expressa acima é:
+            </p>
+
+            <div class="respostas">
+
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta1">
+                    <label for="resposta1"></label>
+                    <p>Se não ocorre harmonia no lar, então ocorre de Maria não ser sensata e de João ser amoroso.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta2">
+                    <label for="resposta2"></label>
+                    <p>Se não ocorre harmonia no lar, então ocorre de Maria ser sensata e de João não ser amoroso.</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta3">
+                    <label for="resposta3"></label>
+                    <p>Se não ocorre harmonia no lar, então ocorre de Maria não ser sensata e de João não ser amoroso.
+                    </p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta4">
+                    <label for="resposta4"></label>
+                    <p>Se ocorre harmonia no lar, então ocorre de Maria não ser sensata e de João não ser amoroso.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta5">
+                    <label for="resposta5"></label>
+                    <p>Se ocorre harmonia no lar, então ocorre de Maria ser sensata e de João ser amoroso.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="atividade" id="atividade5">
+            <p class="enunciado">
+                5-) Se viajo de carro, fico cansado. Se viajo de avião, fico com medo. Ou viajo de carro ou viajo de
+                avião. Se não viajo, fico triste. Não fiquei com medo.
+
+            </p>
+
+            <div class="respostas">
+
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta1">
+                    <label for="resposta1"></label>
+                    <p>Fiquei triste</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta2">
+                    <label for="resposta2"></label>
+                    <p>Fiquei feliz</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta3">
+                    <label for="resposta3"></label>
+                    <p>Viaei de avião</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta4">
+                    <label for="resposta4"></label>
+                    <p>Não viajei de carro</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta5">
+                    <label for="resposta5"></label>
+                    <p>Fiquei cansado.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="atividade" id="atividade6">
+            <p class="enunciado"> 6-) Considere que as seguintes afirmações sejam verdadeiras:
+            <ul style="margin-left: 30px;">
+                <li>Se é noite e não chove, então Paulo vai ao cinema.</li>
+                <li>Se não faz frio o Paulo vai ao cinema, então Márcia vai ao cinema.
+                Considerando que, em determinada noite, Márcia não foi ao cinema, é correto afirmar que, nessa noite,</li>
+            </ul>
+            </p>
+
+            <div class="respostas">
+
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta1">
+                    <label for="resposta1"></label>
+                    <p>não fez frio, Paulo não foi ao cinema e choveu.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta2">
+                    <label for="resposta2"></label>
+                    <p>fez frio, Paulo foi ao cinema e choveu.</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta3">
+                    <label for="resposta3"></label>
+                    <p>fez frio, Paulo não foi ao cinema e choveu.</p>
+
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" checked disabled id="resposta4">
+                    <label for="resposta4"></label>
+                    <p>fez frio, Paulo não foi ao cinema e não choveu.</p>
+                </div>
+                <div class="resposta">
+
+                    <input type="radio" disabled id="resposta5">
+                    <label for="resposta5"></label>
+                    <p>não fez frio, Paulo foi ao cinema e não choveu.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div id="rodape"><a href="https://www.linkedin.com/in/daniel-dos-santos-2049ab202/" target="_blank">Desenvolvido por Daniel dos Santos</a></div>
+    </footer>
+    
+    <script src="js/enunciado1.js"></script>
+</body>
+
+</html>

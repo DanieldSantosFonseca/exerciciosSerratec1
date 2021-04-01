@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas lista de exercicios 3</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body id="inicio">
+
+    <header>
+        <nav>
+            <a href="#inicio">
+                <p id="link-menu">Inicio</p>
+            </a>
+
+            <div class="dropdown">
+
+                <p class="dropbtn">atividades</p>
+
+
+                <div class="dropdown-content">
+
+                    <a href="#atividade1">atividade 1</a>
+
+                    <a href="#atividade2">atividade 2</a>
+
+                    <a href="#atividade3">atividade 3</a>
+
+                    <a href="#atividade4">atividade 4</a>
+
+                    <a class="ultimo" href="#atividade5">atividade 5</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+
+                <p class="dropbtn">lista de exercícios</p>
+
+
+                <div class="dropdown-content">
+
+                    <a href="../lista1/respostasLista1.html">Lista 1</a>
+                    <a href="../lista2/respostasLista2.html">Lista 2</a>
+                    <a href="../lista3/respostasLista3.html">Lista 3</a>
+                    <a href="../lista4/respostasLista4.html">Lista 4</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- TODAS AS ATIVIDADE -->
+    <div id="atividades">
+        <h1>Lista de exercícios de Lógica 3</h1>
+
+        <!-- ATIVIDADE 1 -->
+
+        <div class="atividade" id="atividade1">
+            <p class="enunciado"> 1-) Faça um algoritmo para ler três notas de um aluno em uma disciplina e imprimir se ele está aprovado, reprovado ou em recuperação. Para tal, considere os valores (aprovado: média maior ou igual a 7, reprovado: média igual ou  menor que 4, em recuperação: média entre 4,1 e 6,9)
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite a primeira notas: </p>
+                    <input type="number" id="e1-1numero" placeholder="Primeira nota" onkeyup="calculaE1()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite a Segunda nota: </p>
+                    <input type="number" id="e1-2numero"placeholder="Segunda nota" onkeyup="calculaE1()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite a teceira nota: </p>
+                    <input type="number" id="e1-3numero"placeholder="Terceira nota" onkeyup="calculaE1()">
+
+                </div>
+                <div class="resposta">
+                    <p><span id="e1-resposta"></span> </p>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- ATIVIDADE 2 -->
+
+
+        <div class="atividade" id="atividade2">
+            <p class="enunciado">
+                2-) A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra. Faça um algoritmo para calcular e imprimir o salário bruto de um determinado funcionário.
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite a quantidade de horas trabalhadas</p>
+                    <input type="number" id="e2-1numero" placeholder="Horas trabalhadas" onkeyup="calculaE2()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite a quantidade de horas extra trabalhadas </p>
+                    <input type="number" id="e2-2numero"placeholder="Horas extra" onkeyup="calculaE2()">
+
+                </div>
+                <div class="resposta">
+                    <p>Você receberá valor total bruto de: <span id="e2-resposta"></span> </p>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- ATIVIDADE 3 -->
+        <div class="atividade" id="atividade3">
+            <p class="enunciado">
+                3-) Faça um algoritmo que calcule e mostre a tabuada de um número digitado pelo usuário
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite o número que deseja multiplicar</p>
+                    <input type="number" id="e3-1numero" placeholder="Número" onkeyup="calculaE3()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite até qual número deseja multiplicar</p>
+                    <input type="number" id="e3-2numero"placeholder="Vezes a multiplicar" onkeyup="calculaE3()">
+
+                </div>
+                <div class="resposta">
+                    <div id="e3-resposta"> </div>
+
+                </div>
+            </div>
+          
+        </div>
+
+        <hr>
+
+        <!-- ATIVIDADE 4 -->
+        <div class="atividade" id="atividade4">
+            <p class="enunciado">
+                4-) Um funcionário recebe um salário fixo mais 4% de comissão sobre as vendas. Faça um algoritmoque receba o salário fixo de um funcionário e o valor de suas vendas, calcule e mostre a comissão e o salário final do funcionário. 
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite seu salário</p>
+                    <input type="number" id="e4-1numero" placeholder="Número" onkeyup="calculaE4()">
+
+                </div>
+                <div style="display: block;" class="resposta">
+                    <p>Digite o valor das vendas</p>
+                    <input type="number" id="e4-2numero"placeholder="Vezes a multiplicar" onkeyup="calculaE4()">
+
+                </div>
+                <div class="resposta">
+                    <div id="e4-resposta"> </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- ATIVIDADE 5 -->
+        <div class="atividade" id="atividade5">
+            <p class="enunciado">
+                5-) Um litro de refresco é feito com 8 partes de água mineral e 2 partes de suco de maracujá. Faça um algoritmo para calcular quantos litros de água e de suco são necessários para se fazer X litros derefresco (informados pelo usuário). 
+
+            </p>
+
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite a quantidade de Litros de suco que deseja fazer</p>
+                    <input type="number" id="e5-1numero" placeholder="Número" onkeyup="calculaE5()">
+
+                </div>
+ 
+                <div style="display: block;" class="resposta">
+                    <p>Você téra que usar <span id="e5-1resposta">0</span> litros de água </p>
+                    <p>Você téra que usar <span id="e5-2resposta">0</span> litros de suco </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="rodape"><a href="https://www.linkedin.com/in/daniel-dos-santos-2049ab202/" target="_blank">Desenvolvido por Daniel dos Santos</a></div>
+    </footer>
+    
+
+    <script src="js/enunciado1.js"></script>
+    <script src="js/enunciado2.js"></script>
+    <script src="js/enunciado3.js"></script>
+    <script src="js/enunciado4.js"></script>
+    <script src="js/enunciado5.js"></script>
+</body>
+
+</html>
