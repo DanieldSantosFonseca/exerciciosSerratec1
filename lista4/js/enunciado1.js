@@ -36,20 +36,13 @@ function calculaE1() {
         for(index = 0; index < calculo; index++){
             let valorespop = valores.pop()
         }
-        
     }
-
     for (index = 0; index < valor1; index++) {
-        e1_resposta.innerHTML = e1_resposta.innerHTML +
-        `
-        <input type="number" id="e1-resposta${index}" placeholder="Número ${index + 1}" onkeyup="calculaE1_2()" style="width: 10%; min-width: 90px;" value="1">
-        `
+        e1_resposta.innerHTML = e1_resposta.innerHTML + `<input type="number" id="e1-resposta${index}" placeholder="Número ${index + 1}" onkeyup="calculaE1_2()" style="width: 10%; min-width: 90px;" value="1">`
         valor2 = document.getElementById(`e1-resposta${index}`)
         valor3 = Number(valor2.value)
         valores[index] = valor3
-
     }
-
     for (index = 0; index < valor1; index++) {
         (function (index) {
             valores[index].addEventListener("keyup", function () {
@@ -57,7 +50,6 @@ function calculaE1() {
             })
         });
     }
-
     novoValor = valor1;
 }
 
