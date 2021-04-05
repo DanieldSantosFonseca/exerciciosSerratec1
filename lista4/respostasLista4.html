@@ -86,6 +86,20 @@
                 3-) Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120 
             </p>
 
+            <div class="respostas">
+
+                <div style="display: block;" class="resposta">
+                    <p>Digite o primeiro número da sequência.</p>
+                    <input type="number" id="e3-numero" placeholder="Primeiro número" onkeyup="calcularE3()">
+
+                </div>
+ 
+                <div class="resposta">
+                    <div  id="e3-resposta"></div>
+                </div>
+            </div>
+
+
         </div>
 
         <hr>
@@ -118,6 +132,40 @@
                     <td>R$ 2,50</td>
                 </tr>
             </table>
+
+            <div style="min-height: 90vh;" class="respostas">
+
+                <div style="display: flex; justify-content: space-around;" class="resposta">
+                    <div style="display: block;" class="resposta">
+                        <p>Digite o código do produto</p>
+                    <input type="text" id="codigoProduto" placeholder="código do produto">
+                    </div>
+                    <div style="display: block;" class="resposta">
+                        <p>Digite a quantidade que deseja comprar</p>
+                    <input type="number" id="quantidade" placeholder="quantidade">
+                    
+                    </div>
+                </div>
+                <div class="resposta">
+                    <div style="margin: auto; color: red;" id="erroCodigo"></div>
+                </div>
+                <div style="display: flex; justify-content: space-around;" class="resposta">
+                    <button id="adicionarItem" onclick="adicionarItem()">Adicionar produto</button>
+                    <button id="removerItem" onclick="removerItem()">Remover produto</button>
+                    <button id="limparlista" onclick="limparlista()">Limpar lista</button>
+                </div>
+ 
+                <div class="resposta">
+                    <div  id="mostrarLista"></div>
+                </div>
+
+                <div class="resposta">
+                    <div>O valor total da compra é igual a: <span id="totalCompra">R$0,00</span></div>
+                </div>
+
+
+
+            </div>
         </div>
     </div>
 
@@ -128,6 +176,8 @@
     
     <script src="js/enunciado1.js"></script>
     <script src="js/enunciado2.js"></script>
+    <script src="js/enunciado3.js"></script>
+    <script src="js/enunciado4.js"></script>
 </body>
 
 </html>

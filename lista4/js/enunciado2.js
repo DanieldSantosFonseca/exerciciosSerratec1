@@ -1,16 +1,16 @@
-var e2_input = document.getElementById('e2-0resposta')
-var resposta = document.getElementById('e2-resposta')
-var resposta2 = document.getElementById('e2-1resposta')
-var inputs = [0]
+let e2_input = document.getElementById('e2-0resposta')
+let resposta = document.getElementById('e2-resposta')
+let resposta2 = document.getElementById('e2-1resposta')
+let inputs = [0]
 const atributos = {
     value: `-1`,
     type: `number`,
     onkeyup: `criarInput()`,
     style: `width: 10%; min-width: 90px;`
 }
-var auxiliar = 0;
-var inputspop = 0;
-var maior = 0;
+let auxiliar = 0;
+let inputspop = 0;
+let maior = 0;
 
 function criarInput() {
     maior = -1;
@@ -28,6 +28,7 @@ function criarInput() {
     if (inputs[inputs.length - 1] > -1) {
         resposta.appendChild(document.createElement('input')).setAttribute("id", `e2-${inputs.length}resposta`)
         auxiliar = document.getElementById(`e2-${inputs.length}resposta`)
+        /* Antigo */
         for (index in atributos) {
             auxiliar.setAttribute(index, atributos[index]);
         }
