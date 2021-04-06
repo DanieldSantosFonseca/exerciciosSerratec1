@@ -40,7 +40,7 @@ function adicionarItem() {
     campoResposta.innerHTML = "";
 
     let produto = (iCodigo.value).toUpperCase();
-    let quantidade = Number(quantidadeProduto.value);
+    let quantidade = Number(quantidadeProduto.value).toFixed(0);
 
     for (n in valorProdutos) {
         if (produto === valorProdutos[n].nome) {
@@ -54,7 +54,6 @@ function adicionarItem() {
 
     for (n in carrinho) {
         campoResposta.appendChild(document.createElement('p')).setAttribute('id', `prodruto${n}`);
-
 
         document.getElementById(`prodruto${n}`).innerHTML = `Você comprou ${carrinho[n].quantidadeP}, ${carrinho[n].nome}, o valor total do produto é igual a: ${carrinho[n].valorTotal.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`
     
